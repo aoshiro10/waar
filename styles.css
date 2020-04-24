@@ -45,6 +45,7 @@ body {
 	width: 30%;
 	margin: 1.2rem 0;
 	box-sizing: border-box;
+	position: relative;
 }
 
 .panel_title {
@@ -66,6 +67,11 @@ body {
 
 .item_description {
 	font-size: 0.8rem;
+}
+
+.show_more_link {
+	position: absolute;
+	bottom: 0.4rem;
 }
 
 .panel_14 {
@@ -328,6 +334,44 @@ body {
 
 .panel_3_testimonal {
 	padding: 1rem 4rem;
+}
+
+.review_name {
+	margin-top: 2rem;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.review_review {
+	width: 100%;
+	padding: 0 15%;
+}
+
+.review_link {
+	font-weight: 800;
+	font-size: 1.2rem;
+	color: #F6E5BB;
+}
+
+.review_link:hover{
+	text-decoration: none;
+	color: #F6E5BB;
+}
+
+.review_image {
+	width: 10rem;
+	height: 10rem;
+	background-color: white;
+	margin: 0 auto;
+
+}
+
+.panel_15 {
+	padding: 1rem 0;
+	margin-top: 3rem;
+	background-color: #61BEC8;
+
 }
 
 .panel_3_picture {
