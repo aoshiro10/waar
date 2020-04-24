@@ -1,9 +1,11 @@
 /* CSS Document */
-
-
-
 body {
 	background-color: #EEEEEE;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Open Sans', sans-serif;
 }
 
 .main_container {
@@ -49,6 +51,7 @@ body {
 }
 
 .panel_title {
+	font-family: 'Open Sans', sans-serif;
 	color: #7D4A7A;
 	font-size: 1.8rem;
 	margin-right: 1.2rem;
@@ -80,7 +83,6 @@ body {
 
 
 .show_all_link:hover {
-	
 	color: grey;
 	text-decoration: none;
 }
@@ -91,8 +93,22 @@ body {
 	padding-left: 15%;
 }
 
-.panel_1 {
-	height: 25rem;
+.panel_1{
+	  position: relative;
+	  text-align: left;
+	  color: white;
+		width: 100%;
+}
+
+/* HOMEPAGE Bottom right text */
+.bottom-right {
+		position: absolute;
+		bottom: 1.25rem;
+		right: 1.25rem;
+		background-color: rgba(125, 74, 122, 0.8);
+		padding: 3rem;
+		text-transform:uppercase;
+		line-height: 150%;
 }
 
 .panel_2 {
@@ -100,7 +116,6 @@ body {
 }
 
 .bottom_navbar {
-	
 	margin: 0 auto;
 	padding: 0;
 	display: flex;
@@ -260,7 +275,7 @@ body {
 }
 
 .panel_4, .panel_6 {
-	
+
 	padding-bottom: 4rem;
 }
 
@@ -382,7 +397,6 @@ body {
 
 .navbar_donate {
 	width: 13rem;
-	
 	background-color: #61BEC8;
 	font-size: 1.8rem;
 	height: 5.9rem;
@@ -411,7 +425,7 @@ body {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow: hidden;  
+	overflow: hidden;
 }
 
 .link_item {
@@ -442,7 +456,21 @@ body {
   	color: #F6E5BB;
 }
 
-@media (max-width: 930px) { 
+@media (max-width: 930px) {
+	/* HOMEPAGE Bottom right text */
+	.bottom-right {
+			width: 100%;
+			position: absolute;
+			bottom:-0.5rem;
+			right:0rem;
+			background-color: rgba(125, 74, 122, 0.8);
+			padding: 3rem;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			text-transform:uppercase;
+			line-height: 150%;
+	}
+
 	.content {
 		padding-left: 3rem;
 		padding-right: 3rem;
@@ -465,15 +493,55 @@ body {
 
 
 @media (max-width: 768px) {
+	/* HOMEPAGE Bottom right text */
+	.panel_1{
+		  position:static;
+		  text-align: left;
+		  color: white;
+			width: 100%;
+	}
+
+	h4{
+		font-size: 120%;
+	}
+
+	.bottom-right {
+			width: 100%;
+			position: inherit;
+			bottom:-0.5rem;
+			right:0rem;
+			background-color: rgba(125, 74, 122);
+			padding: 3rem;
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			text-transform:uppercase;
+			line-height: 130%;
+	}
 
 	.logo_div_inner {
 		padding-left: 0;
 	}
 
-	.navbar_donate, #panel_3_picture_3 {
+	#panel_3_picture_3 {
 		display: none;
 	}
 
+	.navbar_donate {
+		width: 100%;
+		background-color: #61BEC8;
+		font-size: 1.5rem;
+		height: 3rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.donate_link {
+		color: white;
+		width: 100%;
+		padding-top: 0rem;
+		font-size: 100%;
+	}
 
 	.desktop_hidden {
 		display: inline;
@@ -507,6 +575,7 @@ body {
 	.bottom_navbar {
 		width: 90%;
 	}
+
 
 }
 
