@@ -262,8 +262,9 @@ h1, h2, h3, h4, h5, h6{
 
 .panel_desciption {
 	margin-top: 1rem;
-	width: 40%;
-	line-height: 1.8rem;
+	width: 46%;
+	line-height: 1.5rem;
+	font-size: 0.9rem;
 }
 
 .panel_4 {
@@ -275,16 +276,20 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .panel_4, .panel_6 {
-
 	padding-bottom: 4rem;
 }
 
-.over_div {
+.over_div{
 	width: 24rem;
 	height: 13rem;
 	background-color: white;
 	position: absolute;
 	top: -2rem;
+}
+
+.over_div img{
+	width: 24rem;
+	height: 13rem;
 }
 
 .over_div_placeholder {
