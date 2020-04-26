@@ -8,6 +8,30 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'Open Sans', sans-serif;
 }
 
+li{
+	list-style-type: none;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgba(125, 74, 122, 0.7); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #61BEC8; /* Add a dark-grey background on hover */
+}
+
 .main_container {
 	/*max-width: 1024px;*/
 	margin: 0 auto;
@@ -218,7 +242,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .bottom_text {
-	width: 25%;
+	width: 30%;
 	line-height: 2rem;
 }
 
@@ -242,7 +266,7 @@ h1, h2, h3, h4, h5, h6{
 	color: white;
 	align-items: center;
 	font-size: 130%;
-	height: 9rem;
+	height: inherit;
 }
 
 .podcast_title_div {
@@ -280,16 +304,13 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .over_div{
-	width: 24rem;
-	height: 13rem;
-	background-color: white;
+	width: 47%;
 	position: absolute;
 	top: -2rem;
 }
 
 .over_div img{
-	width: 24rem;
-	height: 13rem;
+	width: 100%;
 }
 
 .over_div_placeholder {
@@ -301,10 +322,12 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .temp_media {
-	width: 50%;
-	height: 12rem;
-	background-color: white;
+	width: 80%;
 	margin: 2rem auto;
+}
+
+.temp_media img{
+	width: 100%;
 }
 
 .inner_panel_2 {
@@ -323,6 +346,10 @@ h1, h2, h3, h4, h5, h6{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+.panel_3_pictures img {
+	width: 100%;
 }
 
 .panel_header h6 {
@@ -397,7 +424,6 @@ h1, h2, h3, h4, h5, h6{
 .panel_3_picture {
 	width: 30%;
 	height: 9rem;
-	background-color: white;
 }
 
 .navbar_donate {
@@ -554,7 +580,6 @@ h1, h2, h3, h4, h5, h6{
 
 	.panel_3_picture {
 		width: 45%;
-		height: 10rem;
 	}
 
 	.navbar {
@@ -602,12 +627,18 @@ h1, h2, h3, h4, h5, h6{
 	.inner_panel_2 {
 		width: 100%;
 	}
+
 	.logo_div {
 		width: 100%;
 		padding: 0.5rem 0;
 	}
+
 	.panel_3_pictures {
 		justify-content: space-around;
+	}
+
+	.panel_3_picture {
+		width: 60%;
 	}
 
 	.panel_3_testimonal {
