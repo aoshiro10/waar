@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>WAAR</title>
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300&display=swap" rel="stylesheet">
@@ -17,13 +17,19 @@
 	<div class="main_container">
 
 		<div class="navbar">
+
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon">
+			    <i class="fa fa-bars" onclick="hamburgerFunction()"></i>
+			</a>
+
 			<div class="logo_div">
 				<div class="logo_div_inner">
 					<a href="index.html"><img id="navbar_logo" src="Images/logo.png" alt="Logo"></a>
 				</div>
 			</div>
 
-			<div class="navbar_links">
+			<div class="navbar_links" id="navbar_links">
 				<div id="navbar_top_links">
 					<ul class="links_list">
 	  					<li class="link_item"><a href="#">About Page</a></li>
@@ -60,7 +66,7 @@
 
 			<div class="content">
 
-				<p class="font-weight-bold">Women Against Abusive Relationships (WAAR) is an awareness, education, and prevention program. We teach participants how to identify signs of abusive personalities and how to have a healhty relationship. We also offer empowerment activiest to help victims and survivors of intimate partner violence and sexual violence make informed choices necessary for healthy relationships.</p>
+				<p class="font-weight-bold">Women Against Abusive Relationships (WAAR) is an awareness, education, and prevention program. We teach participants how to identify signs of abusive personalities and how to have a healthy relationship. We also offer empowerment activies to help victims and survivors of intimate partner violence and sexual violence make informed choices necessary for healthy relationships.</p>
 
 				<div class="mission_panel">
 					<div class="inner_panel_2" id="panel_2_1">

@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>WAAR</title>
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300&display=swap" rel="stylesheet">
@@ -18,13 +18,19 @@
 	<div class="main_container">
 
 		<div class="navbar">
+
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="hamburgerFunction()">
+			    <i class="fa fa-bars"></i>
+			</a>
+
 			<div class="logo_div">
 				<div class="logo_div_inner">
 					<a href="index.html"><img id="navbar_logo" src="Images/logo.png" alt="Logo"></a>
 				</div>
 			</div>
 
-			<div class="navbar_links">
+			<div class="navbar_links" id="navbar_links">
 				<div id="navbar_top_links">
 					<ul class="links_list">
 	  					<li class="link_item"><a href="#">About Page</a></li>
@@ -54,7 +60,7 @@
 			<div class="content">
 				<p class="panel_title font-weight-bold">SERVICES</p>
 
-				<p class="panel_description">Women Against Abuse touches the lives of 12,500 people each year through a continuum of trauma-informed care, as well as community education and advocacy. Learn more about the services we offer.</p>
+				<p class="panel_description">WAAR touches the lives of 12,500 people each year through a continuum of trauma-informed care, as well as community education and advocacy. Learn more about the services we offer.</p>
 			</div>
 		</div>
 
@@ -65,7 +71,7 @@
 					<button type="button" class="livestream_button">Livestream</button>
 				</div>
 
-				<p class="panel_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore dolor sit amet magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+				<p class="panel_description">We offer a variety of podcasts covering topics such as noticing signs of abusive relationships and healing from the effects of an abusive relationship. </p>
 			</div>
 
 		</div>
@@ -74,51 +80,69 @@
 			<div class="content">
 				<div class="items_row">
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
-						<p class="font-weight-bold">TITLE</p>
-						<p class="no_padding item_description">PRESENTER: NAME</p>
-						<p class="no_padding item_description">DATE: --/--/--</p>
+						<div class="temp_podcast_thumbnail"> 
+							<a href="https://www.youtube.com/watch?v=SpBAP13GxjM" target="_blank">
+							<img src="Images/home_podcast.jpg" alt="podcast link"></a>
+						</div>
+						<p class="font-weight-bold">Signs & Healing from Abusive Relationships</p>
+						<p class="no_padding item_description">PRESENTER: Teryn O'Brien</p>
+						<p class="no_padding item_description">DATE: 02/24/17</p>
 						<br>
 						<a href="" class="item_description">SHOW MORE >></a>
 					</div>
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
-						<p class="font-weight-bold">TITLE</p>
-						<p class="no_padding item_description">PRESENTER: NAME</p>
-						<p class="no_padding item_description">DATE: --/--/--</p>
+						<div class="temp_podcast_thumbnail">
+							<a href="https://www.youtube.com/watch?v=H7Co4LHyO2k" target="_blank">
+							<img src="Images/podcast_2.jpg" alt="podcast link"></a>
+						</div>
+						<p class="font-weight-bold">Avoiding Narcisstic Abuse</p>
+						<p class="no_padding item_description">PRESENTER: Ross Rosenberg</p>
+						<p class="no_padding item_description">DATE: 09/02/17</p>
 						<br>
 						<a href="" class="item_description">SHOW MORE >></a>
 					</div>
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
-						<p class="font-weight-bold">TITLE</p>
-						<p class="no_padding item_description">PRESENTER: NAME</p>
-						<p class="no_padding item_description">DATE: --/--/--</p>
+						<div class="temp_podcast_thumbnail">
+							<a href="https://www.youtube.com/watch?v=ON4iy8hq2hM" target="_blank">
+							<img src="Images/podcast_3.jpg" alt="podcast link"></a>
+						</div>
+						<p class="font-weight-bold">The Difference Between Healthy and Unhealthy Love</p>
+						<p class="no_padding item_description">PRESENTER: Katie Hood</p>
+						<p class="no_padding item_description">DATE: 06/11/19</p>
 						<br>
 						<a href="" class="item_description">SHOW MORE >></a>
 					</div>
 
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
-						<p class="font-weight-bold">TITLE</p>
-						<p class="no_padding item_description">PRESENTER: NAME</p>
-						<p class="no_padding item_description">DATE: --/--/--</p>
+						<div class="temp_podcast_thumbnail">
+							<a href="https://www.youtube.com/watch?v=gh5VhaicC6g" target="_blank">
+							<img src="Images/podcast_4.jpg" alt="podcast link"></a>
+						</div>
+						<p class="font-weight-bold">Skills for Healthy Romantic Relationships</p>
+						<p class="no_padding item_description">PRESENTER: Joanne Davila</p>
+						<p class="no_padding item_description">DATE: 11/17/15</p>
 						<br>
 						<a href="" class="item_description">SHOW MORE >></a>
 					</div>
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
-						<p class="font-weight-bold">TITLE</p>
-						<p class="no_padding item_description">PRESENTER: NAME</p>
-						<p class="no_padding item_description">DATE: --/--/--</p>
+						<div class="temp_podcast_thumbnail">
+							<a href="https://www.youtube.com/watch?v=o4Y5Mr8rZ9A" target="_blank">
+							<img src="Images/podcast_5.jpg" alt="podcast link"></a>
+						</div>
+						<p class="font-weight-bold">4 Habits of ALL Successful Relationships</p>
+						<p class="no_padding item_description">PRESENTERS: Dr.Andrea & Jonathan Taylor-Cummings </p>
+						<p class="no_padding item_description">DATE: 06/21/19<p>
 						<br>
 						<a href="" class="item_description">SHOW MORE >></a>
 					</div>
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
-						<p class="font-weight-bold">TITLE</p>
-						<p class="no_padding item_description">PRESENTER: NAME</p>
-						<p class="no_padding item_description">DATE: --/--/--</p>
+						<div class="temp_podcast_thumbnail">
+							<a href="https://www.youtube.com/watch?v=OS6N7yIVKyo" target="_blank">
+							<img src="Images/podcast_6.jpg" alt="podcast link"></a>
+						</div>
+						<p class="font-weight-bold">Healing from Post Traumatic Stress</p>
+						<p class="no_padding item_description">PRESENTER: Stephanie Lyn</p>
+						<p class="no_padding item_description">DATE: 09/24/19<p>
 						<br>
 						<a href="" class="item_description">SHOW MORE >></a>
 					</div>
@@ -132,7 +156,7 @@
 			<div class="content">
 				<p class="panel_title font-weight-bold">BOOKS</p>
 
-				<p class="panel_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore dolor sit amet magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+				<p class="panel_description">We also offer a selection of books that contain stories, advice and guidance to inspire confidence and healing.</p>
 			</div>
 		</div>
 
@@ -140,50 +164,61 @@
 			<div class="content">
 				<div class="items_row">
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
-						<p class="font-weight-bold">TITLE</p>
-						<p class="no_padding item_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<div class="temp_podcast_thumbnail">
+							<img src="Images/books_1.jpg" alt="podcast link">
+						</div>
+						<p class="font-weight-bold">Healing from the Trauma of Childhood Sexual Abuse</p>
+						<p class="no_padding item_description">This book by a family therapist shares stories from 18 women abused as children, explaining that healing can occur at any stage of life, and that healing, itself, occurs in stages.</p>
 
 						<br>
 						<a href="" class="item_description">SHOW MORE >></a>
 					</div>
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
-						<p class="font-weight-bold">TITLE</p>
-						<p class="no_padding item_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<div class="temp_podcast_thumbnail">
+							<img src="Images/books_2.jpg" alt="podcast link">
+						</div>						<p class="font-weight-bold">The Courage to Heal</p>
+						<p class="no_padding item_description">The Courage to Heal is an inspiring, comprehensive guide that offers hope and a map of the healing journey to every woman who was sexually abused as a child - and to those who care about her.</p>
 
 						<br>
 						<a href="" class="item_description">SHOW MORE >></a>
 					</div>
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
-						<p class="font-weight-bold">TITLE</p>
-						<p class="no_padding item_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<div class="temp_podcast_thumbnail">
+							<img src="Images/books_3.jpg" alt="podcast link">
+						</div>
+						<p class="font-weight-bold">Recover and Rebuild Domestic Violence Workbook</p>
+						<p class="no_padding item_description">The Recover and Rebuild Domestic Violence Workbook is an easy-to-use workbook full of healing exercises and journaling prompts to empower survivors of abusive relationships.</p>
 
 						<br>
 						<a href="" class="item_description">SHOW MORE >></a>
 					</div>
 
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
-						<p class="font-weight-bold">TITLE</p>
-						<p class="no_padding item_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<div class="temp_podcast_thumbnail">
+							<img src="Images/books_4.jpg" alt="podcast link">
+						</div>
+						<p class="font-weight-bold">The Verbally Abusive Relationship</p>
+						<p class="no_padding item_description">You'll get more of the answers you need to recognize abuse when it happens, respond to abusers safely and appropriately, and most important, lead a happier, healthier life.</p>
 
 						<br>
 						<a href="" class="item_description">SHOW MORE >></a>
 					</div>
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
-						<p class="font-weight-bold">TITLE</p>
-						<p class="no_padding item_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<div class="temp_podcast_thumbnail">
+							<img src="Images/books_5.jpg" alt="podcast link">
+						</div>
+						<p class="font-weight-bold">The Emotionally Abusive Relationship</p>
+						<p class="no_padding item_description">In this book, Beverly Engel clearly and with caring offers step-by-step strategies to stop emotional abuse. . . helping both victims and abusers to identify the patterns of this painful and traumatic type of abuse. This book is a guide both for individuals and for couples stuck in the tragic patterns of emotional abuse.</p>
 
 						<br>
 						<a href="" class="item_description">SHOW MORE >></a>
 					</div>
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
-						<p class="font-weight-bold">TITLE</p>
-						<p class="no_padding item_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+						<div class="temp_podcast_thumbnail">
+							<img src="Images/books_6.jpg" alt="podcast link">
+						</div>
+						<p class="font-weight-bold">Gaslighting: Pratical Guide to Discriminate Emotionally Abusive People, Avoid Hidden Manipulation and Cultivate Healthy Relationship</p>
+						<p class="no_padding item_description">Gas-lighting is a type of psychological manipulation wherein a person subverts someone else's reality by denying clear truths, the global environment, or their feelings. The reason for gas-lighting is regularly to compel someone else to encounter or acknowledge a substitute reality.</p>
 
 						<br>
 						<a href="" class="item_description">SHOW MORE >></a>

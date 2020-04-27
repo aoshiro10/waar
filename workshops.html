@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>WAAR</title>
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300&display=swap" rel="stylesheet">
@@ -18,13 +18,19 @@
 	<div class="main_container">
 
 		<div class="navbar">
+
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="hamburgerFunction()">
+			    <i class="fa fa-bars"></i>
+			</a>
+
 			<div class="logo_div">
 				<div class="logo_div_inner">
 					<a href="index.html"><img id="navbar_logo" src="Images/logo.png" alt="Logo"></a>
 				</div>
 			</div>
 
-			<div class="navbar_links">
+			<div class="navbar_links" id="navbar_links">
 				<div id="navbar_top_links">
 					<ul class="links_list">
 	  					<li class="link_item"><a href="#">About Page</a></li>
@@ -69,26 +75,32 @@
 			<div class="content">
 				<div class="items_row">
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
-						<p class="font-weight-bold">SELF=ESTEEM BUILDING</p>
-						<p class="no_padding item_description">PRESENTER: NAME</p>
-						<p class="no_padding item_description">DATE: --/--/--</p>
+						<div class="temp_podcast_thumbnail">
+							<img src="Images/self_esteem_2.jpeg" alt="Self Esteem">
+						</div>		
+						<p class="font-weight-bold">SELF-ESTEEM BUILDING</p>
+						<p class="no_padding item_description">PRESENTER: TBA</p>
+						<p class="no_padding item_description">DATE: TBD</p>
 						<br>
 						<a href="" class="item_description show_more_link">SHOW MORE >></a>
 					</div>
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
+						<div class="temp_podcast_thumbnail">
+							<img src="Images/mental_health.jpeg" alt="Mental Health">
+						</div>		
 						<p class="font-weight-bold">MENTAL HEALTH AWARENESS</p>
-						<p class="no_padding item_description">PRESENTER: NAME</p>
-						<p class="no_padding item_description">DATE: --/--/--</p>
+						<p class="no_padding item_description">PRESENTER: TBA</p>
+						<p class="no_padding item_description">DATE: TBD</p>
 						<br>
 						<a href="" class="item_description show_more_link">SHOW MORE >></a>
 					</div>
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
+						<div class="temp_podcast_thumbnail">
+							<img src="Images/sexual_assault.jpeg" alt="Sexual Assault">
+						</div>							
 						<p class="font-weight-bold">SEXUAL ASSAULT AWARENESS</p>
-						<p class="no_padding item_description">PRESENTER: NAME</p>
-						<p class="no_padding item_description">DATE: --/--/--</p>
+						<p class="no_padding item_description">PRESENTER: TBA</p>
+						<p class="no_padding item_description">DATE: TBD</p>
 						<br>
 						<a href="" class="item_description show_more_link">SHOW MORE >></a>
 					</div>
@@ -106,50 +118,62 @@
 			<div class="content">
 				<div class="items_row">
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
+						<div class="temp_podcast_thumbnail">
+							<img src="Images/self_esteem.jpeg" alt="Self Esteem">
+						</div>							
 						<p class="font-weight-bold">SELF-ESTEEM BUILDING</p>
-						<p class="no_padding item_description">PRESENTER: NAME</p>
-						<p class="no_padding item_description">DATE: --/--/--</p>
+						<p class="no_padding item_description">PRESENTER: Eileen Fraser</p>
+						<p class="no_padding item_description">DATE: 12/12/17</p>
 						<br>
 						<a href="" class="item_description show_more_link">SHOW MORE >></a>
 					</div>
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
+						<div class="temp_podcast_thumbnail">
+							<img src="Images/mental_health_2.jpeg" alt="Mental Health">
+						</div>	
 						<p class="font-weight-bold">MENTAL HEALTH AWARENESS</p>
-						<p class="no_padding item_description">PRESENTER: NAME</p>
-						<p class="no_padding item_description">DATE: --/--/--</p>
+						<p class="no_padding item_description">PRESENTER: Nikola Patton</p>
+						<p class="no_padding item_description">DATE: 4/24/18</p>
 						<br>
 						<a href="" class="item_description show_more_link">SHOW MORE >></a>
 					</div>
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
+						<div class="temp_podcast_thumbnail">
+							<img src="Images/sexual_assault_2.jpeg" alt="Sexual Assault">
+						</div>							
 						<p class="font-weight-bold">SEXUAL ASSAULT AWARENESS</p>
-						<p class="no_padding item_description">PRESENTER: NAME</p>
-						<p class="no_padding item_description">DATE: --/--/--</p>
+						<p class="no_padding item_description">PRESENTER: Tianna Connelly</p>
+						<p class="no_padding item_description">DATE: 9/6/18</p>
 						<br>
 						<a href="" class="item_description show_more_link">SHOW MORE >></a>
 					</div>
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
+						<div class="temp_podcast_thumbnail">
+							<img src="Images/piggy_bank.jpg" alt="Piggy Bank">
+						</div>
 						<p class="font-weight-bold">FINANCIAL HEALTH</p>
-						<p class="no_padding item_description">PRESENTER: NAME</p>
-						<p class="no_padding item_description">DATE: --/--/--</p>
+						<p class="no_padding item_description">PRESENTER: Alexandra Dixon</p>
+						<p class="no_padding item_description">DATE: 12/11/18</p>
 						<br>
 						<a href="" class="item_description show_more_link">SHOW MORE >></a>
 					</div>
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
+						<div class="temp_podcast_thumbnail">
+							<img src="Images/art.jpeg" alt="Art">
+						</div>						
 						<p class="font-weight-bold">HEALING THROUGH ART</p>
-						<p class="no_padding item_description">PRESENTER: NAME</p>
-						<p class="no_padding item_description">DATE: --/--/--</p>
+						<p class="no_padding item_description">PRESENTER: Carrie-Ann Nichols</p>
+						<p class="no_padding item_description">DATE: 1/16/19</p>
 						<br>
 						<a href="" class="item_description show_more_link">SHOW MORE >></a>
 					</div>
 					<div class="item_div">
-						<div class="temp_podcast_thumbnail"></div>
+						<div class="temp_podcast_thumbnail">
+							<img src="Images/writing.jpg" alt="Writing">
+						</div>							
 						<p class="font-weight-bold">HEALING THROUGH WRITING</p>
-						<p class="no_padding item_description">PRESENTER: NAME</p>
-						<p class="no_padding item_description">DATE: --/--/--</p>
+						<p class="no_padding item_description">PRESENTER: Ophelia Patton</p>
+						<p class="no_padding item_description">DATE: 12/19/19</p>
 						<br>
 						<a href="" class="item_description show_more_link">SHOW MORE >></a>
 					</div>
@@ -163,10 +187,12 @@
 			<div class="content">
 				<p class="panel_title font-weight-bold" style="color:#F6E5BB;">REVIEWS</p>
 
-				<div class="review_image"></div>
+				<div class="review_image">
+					<img src="Images/alison_dunn.jpg" alt="Alison Dunn">
+				</div>
 
 				<p class="review_name">Alison Dunn</p>
-				<p class="review_review">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore dolor sit amet magna."</p>
+				<p class="review_review">"It helps. And plus, you know you're not being juged, and when you're telling these stories you don't have to feel embaressed about it."</p>
 
 
 				<br>
