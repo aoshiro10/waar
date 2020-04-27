@@ -12,6 +12,27 @@ li{
 	list-style-type: none;
 }
 
+/* unvisited link */
+.items_row a:link {
+  color: #61BEC8;
+}
+
+/* visited link */
+.items_row a:visited {
+  color: #61BEC8;
+}
+
+/* mouse over link */
+a:hover {
+  color: purple;
+	text-decoration:underline;
+}
+
+/* selected link */
+.items_row a:active {
+  color: #61BEC8;
+}
+
 #myBtn {
 	display: none; /* Hidden by default */
 	position: fixed; /* Fixed/sticky position */
@@ -241,6 +262,19 @@ li{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+}
+
+.bottom_text_div a:visited{
+	color:purple;
+}
+
+.bottom_text_div a:link{
+	color:purple;
+}
+
+.bottom_text_div a:hover{
+	color:#61BEC8;
+	text-decoration: none;
 }
 
 .bottom_text {
@@ -505,6 +539,14 @@ li{
   	color: #F6E5BB;
 }
 
+.carousel-control-prev{
+	left: -12%;
+}
+
+.carousel-control-next{
+	right: -12%;
+}
+
 @media (max-width: 930px) {
 	/* HOMEPAGE Bottom right text */
 	.bottom-right {
@@ -614,7 +656,7 @@ li{
 	}
 
 	.panel_8 {
-		padding-top: 0;
+		padding-top: 8rem;
 	}
 
 	.hotline {
@@ -625,6 +667,13 @@ li{
 		width: 90%;
 	}
 
+	.carousel-control-prev{
+		left: -12%;
+	}
+
+	.carousel-control-next{
+		right: -12%;
+	}
 
 }
 
@@ -693,6 +742,10 @@ li{
 
 	.panel_8, .panel_6 {
 		padding-bottom: 2rem;
+	}
+
+	.panel_8{
+		padding-top: 2rem;
 	}
 
 	.hotline_div {
