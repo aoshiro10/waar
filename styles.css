@@ -13,13 +13,21 @@ li{
 }
 
 /* unvisited link */
-.items_row a:link {
+.items_row a:link, .item_description a:link{
   color: #61BEC8;
 }
 
+.panel_header a:link{
+	color: purple;
+}
+
 /* visited link */
-.items_row a:visited {
+.items_row a:visited, .item_description a:visited {
   color: #61BEC8;
+}
+
+.panel_header a:visited{
+	color: purple;
 }
 
 /* mouse over link */
@@ -28,8 +36,12 @@ a:hover {
 	text-decoration:underline;
 }
 
+.panel_header a:hover{
+	color: #61BEC8;
+
+}
 /* selected link */
-.items_row a:active {
+.items_row a:active, .item_description a:active {
   color: #61BEC8;
 }
 
@@ -192,13 +204,15 @@ a:hover {
 
 .livestream_button {
 	border-radius: 0.8rem;
-	padding: 0 2rem;
+	padding: 0 3rem;
 	padding-top: 0;
 	height: 2.6rem;
 	color: white;
 	border: none;
 	background-color: #61BEC8;
 	font-size: 1.4rem;
+	position:relative;
+	top:-0.5rem;
 }
 
 .panel_3 {
@@ -518,6 +532,10 @@ a:hover {
 #navbar_bottom_links {
 	padding-top: 0.8rem;
 	font-size: 120%;
+}
+
+#navbar_bottom_links a:hover{
+	font-weight: bold;
 }
 
 #navbar_top_links {
