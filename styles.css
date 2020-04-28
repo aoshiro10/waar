@@ -65,6 +65,13 @@ a:hover {
   	background-color: #61BEC8; /* Add a dark-grey background on hover */
 }
 
+#signup {
+	background-color: #61BEC8;
+	font-size: 1.8rem;
+	color: white;
+	margin-top: 1rem;
+}
+
 .main_container {
 	/*max-width: 1024px;*/
 	margin: 0 auto;
